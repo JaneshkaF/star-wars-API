@@ -85,7 +85,7 @@ def deleteUser(id):
 
 # // beginning characters section
 @app.route('/characters', methods=['GET'])
-def handle_hello():
+def get_characters():
 
   characters_query = Characters.query.all()
 
@@ -138,7 +138,7 @@ def deleteCharacter(id):
 
 # // beginning planets section
 @app.route('/planets', methods=['GET'])
-def handle_hello():
+def get_planets():
 
   planets_query = Planets.query.all()
 
